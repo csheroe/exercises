@@ -20,8 +20,8 @@ case choice
     puts "What film would you like to update?"
     title = gets.chomp
     if movies[title.to_sym].nil?
- 		  puts "That film is not in the MMS!"
-  	else
+      puts "That film is not in the MMS!"
+    else
       puts "Please update rating"
       rating = gets.chomp
       movies[title.to_sym] = rating.to_i
